@@ -1,7 +1,7 @@
 <launch>
   <!-- Arguments for WhyCon node -->
   <arg name="name" default="whycon"/>
-  <arg name="targets" default="1"/>
+  <arg name="targets" default="4"/>
   <arg name="outer_diameter" default=".055"/>
   <arg name="inner_diameter" default=".020"/>
 
@@ -14,9 +14,9 @@
     <param name="outer_diameter" value="$(arg outer_diameter)"/>
     <param name="inner_diameter" value="$(arg inner_diameter)"/> 
 
-    <!-- Uncomment and remap the topics to the corresponding topics. .launch files are treated as XML files and uncommenting follows the same convetions -->
-<!--     <remap from="/camera/camera_info" to=""/>
-    <remap from="/camera/image_rect_color" to=""/> -->
+    <!-- Remap the topics to the corresponding topics in the spaces given below -->
+    <remap from="/camera/camera_info" to="/gazebo/overhead_cam/camera_info"/>
+    <remap from="/camera/image_rect_color" to="/gazebo/overhead_cam/image_rect_color"/> 
   </node>
 
   <!-- Running image_view node to display WhyCon output -->

@@ -1,5 +1,5 @@
 <launch>
-  <arg name="world_name" default="task_0_whycon"/>
+  <arg name="world_name" default="task_1_whycon"/>
   <arg name="enable_logging" default="false" />
   <arg name="paused" value="false"/>
   <arg name="debug" default="false"/>
@@ -7,7 +7,7 @@
   <arg name="verbose" default="false"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find task_0_package)/worlds/$(arg world_name).world" />
+    <arg name="world_name" value="$(find task_1)/worlds/$(arg world_name).world" />
     <arg name="debug" value="$(arg debug)" />
     <arg name="paused" value="$(arg paused)"/>
     <arg name="gui" value="$(arg gui)" />

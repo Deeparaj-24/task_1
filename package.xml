@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>SR_task_0</name>
+  <name>task_1</name>
   <version>0.0.0</version>
-  <description>The task_0 package</description>
+  <description>The task_1 package</description>
 
   
-  <maintainer email="rishikesh@e-yantra.org">rishi</maintainer>
+  <maintainer email="kaushik5498@gmail.com">kaushik</maintainer>
 
 
   <!-- One license tag required, multiple allowed, one license per tag -->
