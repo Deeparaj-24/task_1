@@ -19,7 +19,7 @@ class Whycon_detect():
 		self.position_coordinates = []
 		for i in range(len(data.poses)):
     			self.position_coordinates.append([data.poses[i].position.x, data.poses[i].position.y, data.poses[i].position.z])
-        		self.whycon_coordinates[int(i)] = self.position_coordinates[i]
+        		self.whycon_coordinates[str(i)] = self.position_coordinates[i]
 		print self.whycon_coordinates
 
 
